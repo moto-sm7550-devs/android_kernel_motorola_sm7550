@@ -1234,6 +1234,7 @@
   ktime_get_with_offset
   kvfree
   kvmalloc_node
+  led_blink_set
   led_classdev_flash_register_ext
   led_classdev_flash_unregister
   led_classdev_unregister
@@ -1709,6 +1710,7 @@
   powercap_unregister_control_type
   powercap_unregister_zone
   power_supply_changed
+  power_supply_class
   power_supply_get_by_name
   power_supply_get_drvdata
   power_supply_get_property
