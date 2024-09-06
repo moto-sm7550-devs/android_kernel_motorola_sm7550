@@ -285,7 +285,7 @@ void ax88179_set_multicast(struct net_device *net)
 		axdev->rxctl |= AX_RX_CTL_AMALL;
 	} else if (mc_count == 0) {
 	} else {
-		u32 crc_bits;
+			u32 crc_bits;
 		struct netdev_hw_addr *ha = NULL;
 
 		memset(m_filter, 0, AX_MCAST_FILTER_SIZE);
