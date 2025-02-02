@@ -1150,7 +1150,7 @@ static void mhi_sm_pcie_event_manager(struct work_struct *work)
 			flush_workqueue(mhi->ring_init_wq);
 			mhi->stop_polling_m0 = false;
 			/* Avoid backing up mmio twice */
-			if (old_dstate != EP_PCIE_EVENT_PM_D3_HOT)
+			if ((enum ep_pcie_event) old_dstate != EP_PCIE_EVENT_PM_D3_HOT)
 				mhi_dev_backup_mmio(mhi_sm_ctx->mhi_dev);
 		}
 
